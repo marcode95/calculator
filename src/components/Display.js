@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = (props) => { // eslint-disable-line
+const Display = ({result}) => { // eslint-disable-line
   return (
     <>
-      <div>{props.result}</div> {/*eslint-disable-line*/}
+      <div>{result}</div> {/*eslint-disable-line*/}
     </>
   );
 };

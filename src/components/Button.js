@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = (props) => { // eslint-disable-line
+const Button = ({name}) => { // eslint-disable-line
   return (
     <>
-      <button type="button">{props.name}</button> {/*eslint-disable-line*/}
+      <button type="button">{name}</button> {/*eslint-disable-line*/}
     </>
   );
 };
