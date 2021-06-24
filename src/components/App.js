@@ -1,8 +1,13 @@
 import '../App.css';
+import Display from './Display.js';
+import ButtonPanel from './ButtonPanel.js';
 
-function App() {
+const App = () => {
   return (
-    <div className="App" />
+    <div className="App">
+      <Display /> 
+      <ButtonPanel /> 
+    </div>
   );
 }
 
