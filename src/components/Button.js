@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({name}) => { // eslint-disable-line
+const Button = ({buttonName}) => { // eslint-disable-line
   return (
     <>
-      <button type="button">{name}</button> {/*eslint-disable-line*/}
+      <button type="button">{buttonName}</button> {/*eslint-disable-line*/}
     </>
   );
 };
 
 Button.propTypes = {
-  name: PropTypes.string, // eslint-disable-line
+  buttonName: PropTypes.string.isRequired, // eslint-disable-line
 };
 
 export default Button;
