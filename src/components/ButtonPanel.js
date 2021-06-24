@@ -1,9 +1,9 @@
 import React from 'react';
-import Button from './Button'
+import Button from './Button';
 
 const ButtonPanel = () => {
   return (
-    <React.Fragment>
+    <>
       <div>
         <Button name="AC" />
         <Button name="+/-" />
@@ -33,8 +33,8 @@ const ButtonPanel = () => {
         <Button name="." />
         <Button name="=" />
       </div>
-    </React.Fragment>
+    </>
   );
-}
+};
 
 export default ButtonPanel;

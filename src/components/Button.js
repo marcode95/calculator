@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 const Button = (props) => {
   return (
-    <React.Fragment>
-      <button>{props.name}</button>
-    </React.Fragment>
+    <>
+      <button type="button">{props.name}</button>
+    </>
   );
-}
+};
 
 Button.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
 };
 
 export default Button;
