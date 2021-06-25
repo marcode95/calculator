@@ -1,19 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = ({result}) => {
-  return (
-    <>
-      <div>{result}</div> {/*eslint-disable-line*/}
-    </>
-  );
-};
+const Display = ({ result }) => (
+  <>
+    <div>{result}</div>
+  </>
+);
 
 Display.propTypes = {
-  result: PropTypes.string
+  result: PropTypes.string,
 };
-Display.defaultProbs = {
+Display.defaultProps = {
   result: '0',
-}; 
+};
 
 export default Display;
