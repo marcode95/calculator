@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-const ButtonPanel = () => { // eslint-disable-line
+const ButtonPanel = () => {
   return (
     <>
       <div>
