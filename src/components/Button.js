@@ -10,7 +10,11 @@ const Button = ({buttonName}) => { // eslint-disable-line
 };
 
 Button.propTypes = {
-  buttonName: PropTypes.string.isRequired, // eslint-disable-line
+  buttonName: PropTypes.string, // eslint-disable-line
+};
+
+Button.defaultProps = {
+  buttonName: 'button',
 };
 
 export default Button;

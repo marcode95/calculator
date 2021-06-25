@@ -10,7 +10,7 @@ const Display = ({result}) => { // eslint-disable-line
 };
 
 Display.propTypes = {
-  result: PropTypes.string.isRequired // eslint-disable-line
+  result: PropTypes.string // eslint-disable-line
 };
 Display.defaultProbs = {
   result: '0',
