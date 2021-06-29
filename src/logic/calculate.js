@@ -6,12 +6,14 @@ const calculate = (data, buttonName) => {
   if (buttonName === 'AC') {
     newData.total = 0;
     newData.next = 0;
-  } else if (buttonName === '+/-') {
+    return newData;
+  } if (buttonName === '+/-') {
     newData.total = -(newData.total);
     newData.next = -(newData.next);
-  } else {
-    operate(newData.total, newData.next, buttonName);
+    return newData;
   }
+  const result = operate(newData.total, newData.next, buttonName);
+  return result;
 };
 
 export default calculate;
