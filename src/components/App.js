@@ -15,25 +15,17 @@ class App extends Component {
   }
 
   handleClick = (buttonName) => {
-    const result = calculate(this.state, buttonName);
-
-    if (typeof result === 'string') {
-      this.setState({
-        total: result,
-      });
-    } else {
-      this.setState({
-        total: result.total,
-        next: result.next,
-      });
-    }
+    const newState = calculate(this.state, buttonName);
+    this.setState(newState);
   }
 
   render() {
     const { total } = this.state;
+    const { next } = this.state;
+    const { operation } = this.state;
     return (
       <div className="App">
-        <Display result={total} />
+        <Display total={total} next={next} operation={operation} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );

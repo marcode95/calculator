@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({ buttonName, clickHandler }) => (
   <>
-    <button type="button" onClick={clickHandler}>
+    <button type="button" onClick={() => clickHandler(buttonName)}>
       {buttonName}
       {' '}
     </button>
