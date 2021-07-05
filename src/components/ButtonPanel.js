@@ -1,38 +1,65 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = () => (
+const firstRow = ['AC', '+/-', '%', '/'];
+const secondRow = ['7', '8', '9', 'X'];
+const thirdRow = ['4', '5', '6', '-'];
+const fourthRow = ['1', '2', '3', '+'];
+const fifthRow = ['0', '.', '='];
+
+const ButtonPanel = ({ clickHandler }) => (
   <>
     <div>
-      <Button buttonName="AC" />
-      <Button buttonName="+/-" />
-      <Button buttonName="%" />
-      <Button buttonName="/" />
+      {firstRow.map((name) => (
+        <Button
+          buttonName={name}
+          key={name}
+          clickHandler={clickHandler}
+        />
+      ))}
     </div>
     <div>
-      <Button buttonName="7" />
-      <Button buttonName="8" />
-      <Button buttonName="9" />
-      <Button buttonName="X" />
+      {secondRow.map((name) => (
+        <Button
+          buttonName={name}
+          key={name}
+          clickHandler={clickHandler}
+        />
+      ))}
     </div>
     <div>
-      <Button buttonName="4" />
-      <Button buttonName="5" />
-      <Button buttonName="6" />
-      <Button buttonName="-" />
+      {thirdRow.map((name) => (
+        <Button
+          buttonName={name}
+          key={name}
+          clickHandler={clickHandler}
+        />
+      ))}
     </div>
     <div>
-      <Button buttonName="1" />
-      <Button buttonName="2" />
-      <Button buttonName="3" />
-      <Button buttonName="+" />
+      {fourthRow.map((name) => (
+        <Button
+          buttonName={name}
+          key={name}
+          clickHandler={clickHandler}
+        />
+      ))}
     </div>
     <div>
-      <Button buttonName="0" />
-      <Button buttonName="." />
-      <Button buttonName="=" />
+      {fifthRow.map((name) => (
+        <Button
+          buttonName={name}
+          key={name}
+          clickHandler={clickHandler}
+        />
+      ))}
     </div>
   </>
 );
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;

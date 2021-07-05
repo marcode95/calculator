@@ -1,17 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = ({ result }) => (
+const Display = ({ total, next, operation }) => (
   <>
-    <div>{result}</div>
+    <div style={{ color: 'red' }}>{total}</div>
+    <div>{operation}</div>
+    <div>{next}</div>
   </>
 );
 
 Display.propTypes = {
-  result: PropTypes.string,
+  total: PropTypes.string,
+  next: PropTypes.string,
+  operation: PropTypes.string,
 };
 Display.defaultProps = {
-  result: '0',
+  total: '0',
+  next: null,
+  operation: null,
 };
 
 export default Display;
