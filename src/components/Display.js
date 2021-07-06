@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './style.css';
+import './reset.css';
 
 const Display = ({ total, next, operation }) => (
   <>
-    <div style={{ color: 'red' }}>{total}</div>
-    <div>{operation}</div>
-    <div>{next}</div>
+    <div className="display">
+      <p className="result" style={{ display: (next === null || 0) ? 'block' : 'none' }}>{total}</p>
+      <p className="operation">{operation}</p>
+      <p className="next">{next}</p>
+    </div>
   </>
 );
 

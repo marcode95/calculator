@@ -24,8 +24,12 @@ class App extends Component {
     const { next } = this.state;
     const { operation } = this.state;
     return (
-      <div className="App">
-        <Display total={total} next={next} operation={operation} />
+      <div className="App" style={{ display: 'flex', flexDirection: 'column', width: 700 }}>
+        <Display
+          total={total}
+          next={next}
+          operation={operation}
+        />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
