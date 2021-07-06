@@ -7,6 +7,7 @@ const secondRow = ['7', '8', '9', 'x'];
 const thirdRow = ['4', '5', '6', '-'];
 const fourthRow = ['1', '2', '3', '+'];
 const fifthRow = ['0', '.', '='];
+const orangeButtons = ['/', 'x', '-', '+', '='];
 
 const ButtonPanel = ({ clickHandler }) => (
   <>
@@ -17,6 +18,7 @@ const ButtonPanel = ({ clickHandler }) => (
           key={name}
           clickHandler={clickHandler}
           wide={(name === '0')}
+          color={(orangeButtons.includes(name))}
         />
       ))}
     </div>
@@ -27,6 +29,7 @@ const ButtonPanel = ({ clickHandler }) => (
           key={name}
           clickHandler={clickHandler}
           wide={(name === '0')}
+          color={(orangeButtons.includes(name))}
         />
       ))}
     </div>
@@ -37,6 +40,7 @@ const ButtonPanel = ({ clickHandler }) => (
           key={name}
           clickHandler={clickHandler}
           wide={(name === '0')}
+          color={(orangeButtons.includes(name))}
         />
       ))}
     </div>
@@ -47,6 +51,7 @@ const ButtonPanel = ({ clickHandler }) => (
           key={name}
           clickHandler={clickHandler}
           wide={(name === '0')}
+          color={(orangeButtons.includes(name))}
         />
       ))}
     </div>
@@ -57,6 +62,7 @@ const ButtonPanel = ({ clickHandler }) => (
           key={name}
           clickHandler={clickHandler}
           wide={(name === '0')}
+          color={(orangeButtons.includes(name))}
         />
       ))}
     </div>

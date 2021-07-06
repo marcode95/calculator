@@ -35,4 +35,5 @@ p {
 button {
   height: 100px;
   font-size: 24px;
+  border: 1px solid lightgray;
 }
