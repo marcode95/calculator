@@ -3,6 +3,7 @@ p {
 }
 
 .display {
+  position: relative;
   height: 100px;
   background-color: grey;
   display: flex;
@@ -18,7 +19,15 @@ p {
 }
 
 .operation {
+  position: absolute;
   color: white;
   font-size: 20px;
   align-self: flex-end;
+}
+
+.next {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: center;
 }
