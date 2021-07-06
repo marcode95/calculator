@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 const firstRow = ['AC', '+/-', '%', '/'];
-const secondRow = ['7', '8', '9', 'X'];
+const secondRow = ['7', '8', '9', 'x'];
 const thirdRow = ['4', '5', '6', '-'];
 const fourthRow = ['1', '2', '3', '+'];
 const fifthRow = ['0', '.', '='];
@@ -16,6 +16,7 @@ const ButtonPanel = ({ clickHandler }) => (
           buttonName={name}
           key={name}
           clickHandler={clickHandler}
+          wide={(name === '0')}
         />
       ))}
     </div>
@@ -25,6 +26,7 @@ const ButtonPanel = ({ clickHandler }) => (
           buttonName={name}
           key={name}
           clickHandler={clickHandler}
+          wide={(name === '0')}
         />
       ))}
     </div>
@@ -34,6 +36,7 @@ const ButtonPanel = ({ clickHandler }) => (
           buttonName={name}
           key={name}
           clickHandler={clickHandler}
+          wide={(name === '0')}
         />
       ))}
     </div>
@@ -43,6 +46,7 @@ const ButtonPanel = ({ clickHandler }) => (
           buttonName={name}
           key={name}
           clickHandler={clickHandler}
+          wide={(name === '0')}
         />
       ))}
     </div>
@@ -52,6 +56,7 @@ const ButtonPanel = ({ clickHandler }) => (
           buttonName={name}
           key={name}
           clickHandler={clickHandler}
+          wide={(name === '0')}
         />
       ))}
     </div>

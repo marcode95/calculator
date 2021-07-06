@@ -11,7 +11,7 @@ const operate = (numberOne, numberTwo, operation) => {
     case '-':
       result = Big(x.minus(y));
       break;
-    case 'X':
+    case 'x':
       result = Big(x.times(y));
       break;
     case '/':
