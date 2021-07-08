@@ -10,19 +10,23 @@ describe('checks if Button renders', () => {
 
   test('should render', () => {
     const tree = renderer
-      .create(<Button buttonName=""
-      wide={false}
-      color={false}
-      clickHandler={clickHandler} />)
+      .create(<Button
+        buttonName=""
+        wide={false}
+        color={false}
+        clickHandler={clickHandler}
+      />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('should display right value', () => {
-    render(<Button buttonName="+"
-    wide={true}
-    color={false} 
-    clickHandler={clickHandler} />);
+    render(<Button
+      buttonName="+"
+      wide
+      color={false}
+      clickHandler={clickHandler}
+    />);
     const result = screen.getByText('+');
 
     expect(result).toBeInTheDocument();
