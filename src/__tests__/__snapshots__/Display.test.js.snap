@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checks if Display renders should render correctly 1`] = `
+<div
+  className="display"
+>
+  <p
+    className="result"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    0
+  </p>
+  <p
+    className="operation"
+  />
+  <p
+    className="next"
+  />
+</div>
+`;
