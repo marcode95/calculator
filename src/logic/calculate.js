@@ -46,7 +46,7 @@ const calculate = (data, buttonName) => {
     }
   }
 
-  if (['+', '-', 'X', '/', '='].includes(buttonName)) {
+  if (['+', '-', 'x', '/', '='].includes(buttonName)) {
     if (data.total && data.next && data.operation) {
       newData.total = operate(data.total, data.next, data.operation);
       newData.next = undefined;

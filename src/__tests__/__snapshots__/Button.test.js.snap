@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checks if Button renders should render 1`] = `
+<button
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "",
+      "width": "25%",
+    }
+  }
+  type="button"
+>
+  
+   
+</button>
+`;
